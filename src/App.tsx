@@ -5,7 +5,7 @@ const projects = [
   {
     id: 1,
     title: "Curious Fitness",
-    description: "A tracker+calculator for fitness enthus",
+    description: "A tracker+calculator for fitness enthusiasts",
     link: "https://curiousfitness.vercel.app/",
     color: "from-amber-500/20 to-orange-500/20",
   },
@@ -26,7 +26,7 @@ const projects = [
   {
     id: 4,
     title: "Exam Buddy AI",
-    description: "An AI Chatbot exclusively trained for high shcool students syllabus",
+    description: "An AI Chatbot exclusively trained for high school students syllabus",
     link: "https://aiexambuddy.vercel.app/",
     color: "from-purple-500/20 to-pink-500/20",
   },
@@ -37,18 +37,25 @@ const projects = [
     link: "nexchat.vercel.app",
     color: "from-rose-500/20 to-red-500/20",
   },
+  {
+    id: 6,
+    title: "My INTRO PAGE",
+    description: "It's me, about me!!",
+    link: "https://rkapoor001.github.io/Intro/",
+    color: "from-indigo-500/20 to-violet-500/20",
+  },
 ];
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
-      <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-background/80 border-b border-border/50">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center gap-4">
+      <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-gradient-to-r from-primary/5 via-background/80 to-primary/5 border-b border-border/50">
+        <div className="max-w-6xl mx-auto px-6 py-6 flex items-center gap-6">
           <motion.div
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.5, type: "spring" }}
-            className="w-12 h-12 rounded-full bg-gradient-to-br from-primary/80 to-primary flex items-center justify-center text-primary-foreground font-display text-lg shadow-lg"
+            className="w-16 h-16 rounded-full bg-gradient-to-br from-primary/80 to-primary flex items-center justify-center text-primary-foreground font-display text-2xl shadow-xl border-2 border-background"
             data-testid="profile-avatar"
           >
             RK
@@ -58,16 +65,16 @@ export default function Home() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2, duration: 0.5 }}
-              className="font-display text-xl font-semibold tracking-tight"
+              className="font-display text-3xl md:text-4xl font-bold tracking-tight"
               data-testid="text-name"
             >
-              RUDRA KAPOOR
+              Rudra Kapoor
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.3, duration: 0.5 }}
-              className="text-sm text-muted-foreground"
+              className="text-lg text-muted-foreground font-medium"
               data-testid="text-age"
             >
               15 years old
@@ -76,7 +83,7 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="pt-32 pb-20 px-6">
+      <main className="pt-48 pb-20 px-6">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -88,7 +95,7 @@ export default function Home() {
               My Projects
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              A collection of work that showcases my skills and passion for creating meaningful digital experiences.
+              A collection of my work that showcases my interests and slight experience in the development as well as assisted development field. Feel free to open and know more about my works..
             </p>
           </motion.div>
 
@@ -131,7 +138,7 @@ export default function Home() {
       <footer className="py-8 border-t border-border/50">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <p className="text-sm text-muted-foreground">
-            © 2026 [Your Name]. All rights reserved.
+            © 2026 RUDRA. All rights reserved.
           </p>
         </div>
       </footer>
